@@ -1,4 +1,4 @@
-package com.example.sns.dto;
+package com.example.sns.model;
 
 import jakarta.persistence.*;
 

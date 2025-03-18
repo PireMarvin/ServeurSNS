@@ -1,6 +1,6 @@
 package com.example.sns.service;
 
-import com.example.sns.dto.DataModel;
+import com.example.sns.model.DataModel;
 import com.example.sns.repository.DataRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.example.sns.controller;
 
-import com.example.sns.dto.DataModel;
+import com.example.sns.model.DataModel;
 import com.example.sns.service.DataProcessingService;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

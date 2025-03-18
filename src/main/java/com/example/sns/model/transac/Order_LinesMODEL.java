@@ -1,4 +1,4 @@
-package com.example.sns.dto.transac;
+package com.example.sns.model.transac;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Order_LinesDTO {
+public class Order_LinesMODEL {
     private int ID;
     private int order_id;
     private int product_id;

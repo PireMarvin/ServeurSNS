@@ -1,4 +1,4 @@
-package com.example.sns.dto.transac;
+package com.example.sns.model.transac;
 
 import lombok.*;
 
@@ -10,7 +10,7 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrdersDTO {
+public class OrdersMODEL {
     private int ID;
     private int client_id;
     private Date order_date;
