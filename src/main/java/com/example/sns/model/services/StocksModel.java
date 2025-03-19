@@ -6,14 +6,14 @@ import lombok.*;
 import java.sql.Date;
 
 @Entity
-@Table(name = "Adresses")
+@Table(name = "Stocks")
 @Getter
 @Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Stocks {
+public class StocksModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

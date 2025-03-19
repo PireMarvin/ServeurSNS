@@ -3,9 +3,6 @@ package com.example.sns.model.bank1;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.sql.Timestamp;
-import java.util.Date;
-
 @Entity
 @Table(name = "external_transactions")
 @Getter
@@ -13,7 +10,7 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ExternalTransactions {
+public class ExternalTransactionsModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

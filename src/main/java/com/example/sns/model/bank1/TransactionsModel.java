@@ -1,10 +1,9 @@
-package com.example.sns.model.bank2;
+package com.example.sns.model.bank1;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.sql.Timestamp;
-import java.util.Date;
 
 @Entity
 @Table(name = "transactions")
@@ -14,7 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Transactions {
+public class TransactionsModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int transaction_id;
@@ -46,6 +45,4 @@ public class Transactions {
     @Column(name = "new_debit_account_state", nullable = false)
     private String new_debit_account_state;
 
-    @Column(name = "age_at_request", nullable = false)
-    private int age_at_request;
 }

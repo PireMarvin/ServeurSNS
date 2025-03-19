@@ -10,7 +10,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderLines {
+public class OrderLinesModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

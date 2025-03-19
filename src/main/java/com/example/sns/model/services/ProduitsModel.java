@@ -2,17 +2,16 @@ package com.example.sns.model.services;
 
 import jakarta.persistence.*;
 import lombok.*;
-import java.time.LocalDate;
 
 @Entity
-@Table(name = "Adresses")
+@Table(name = "Produits")
 @Getter
 @Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Categories {
+public class ProduitsModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +19,15 @@ public class Categories {
 
     @Column(name = "Nom", nullable = false)
     private String nom;
+
+    @Column(name = "Prix", nullable = false)
+    private double prix;
+
+    @Column(name = "CategorieId", nullable = false)
+    private int categorieId;
+
+    @Column(name = "StockId",nullable = false)
+    private int stockId;
 
     @Column(name = "Description")
     private String description;

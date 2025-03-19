@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class DeliveryTracking {
+public class DeliveryTrackingModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

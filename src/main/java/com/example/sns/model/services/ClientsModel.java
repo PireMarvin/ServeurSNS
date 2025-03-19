@@ -6,14 +6,14 @@ import lombok.*;
 import java.sql.Date;
 
 @Entity
-@Table(name = "Adresses")
+@Table(name = "Clients")
 @Getter
 @Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Clients {
+public class ClientsModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,7 +26,7 @@ public class Clients {
     private String email;
 
     @Column(name = "Téléphone", nullable = false)
-    private String telphone;
+    private String telephone;
 
     @Column(name = "AdressID", nullable = false)
     private int adressID;

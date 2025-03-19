@@ -2,7 +2,6 @@ package com.example.sns.model.services;
 
 import jakarta.persistence.*;
 import lombok.*;
-import java.time.LocalDate;
 
 @Entity
 @Table(name = "Adresses")
@@ -12,7 +11,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Adresses {
+public class AdressesModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -10,7 +10,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ExternalTransactions {
+public class ExternalTransactionsModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

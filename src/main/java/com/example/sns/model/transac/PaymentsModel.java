@@ -12,7 +12,7 @@ import java.sql.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Payments {
+public class PaymentsModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
