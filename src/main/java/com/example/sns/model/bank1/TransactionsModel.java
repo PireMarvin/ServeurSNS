@@ -37,12 +37,15 @@ public class TransactionsModel {
     private String authentication_type;
 
     @Column(name = "transferred_amount", nullable = false)
-    private float transferred_amount;
+    private double transferred_amount;
 
     @Column(name = "transaction_note", nullable = false)
     private String transaction_note;
 
     @Column(name = "new_debit_account_state", nullable = false)
     private String new_debit_account_state;
+
+    @Column(name = "age_at_request", nullable = false)
+    private int age_at_request;
 
 }

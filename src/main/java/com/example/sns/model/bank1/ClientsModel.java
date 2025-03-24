@@ -40,9 +40,6 @@ public class ClientsModel {
     @Column(name = "monthly_income")
     private double monthly_income;
 
-    @Column(name = "age_at_request")
-    private int age_at_request;
-
     @Column(name = "bank_name")
     private String bank_name;
 }

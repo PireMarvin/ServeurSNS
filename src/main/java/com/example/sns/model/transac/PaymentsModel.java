@@ -22,7 +22,7 @@ public class PaymentsModel {
     private int order_id;
 
     @Column(name = "amount")
-    private float amount;
+    private double amount;
 
     @Column(name = "status")
     private String status;

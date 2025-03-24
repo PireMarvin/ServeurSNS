@@ -29,7 +29,7 @@ public class OrdersModel {
     private Timestamp order_time;
 
     @Column(name = "total")
-    private float total;
+    private double total;
 
     @Column(name = "status")
     private String status;
