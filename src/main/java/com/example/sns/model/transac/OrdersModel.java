@@ -39,4 +39,7 @@ public class OrdersModel {
 
     @Column(name = "tracking_id")
     private String tracking_id;
+
+    @Column(name = "address_id")
+    private int address_id;
 }

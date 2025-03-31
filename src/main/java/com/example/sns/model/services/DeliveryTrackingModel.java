@@ -1,4 +1,4 @@
-package com.example.sns.model.transac;
+package com.example.sns.model.services;
 
 import jakarta.persistence.*;
 import lombok.*;

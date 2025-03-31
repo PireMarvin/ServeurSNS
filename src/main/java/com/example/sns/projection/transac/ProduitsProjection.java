@@ -1,4 +1,4 @@
-package com.example.sns.projection.services;
+package com.example.sns.projection.transac;
 
 public interface ProduitsProjection {
 

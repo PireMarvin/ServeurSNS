@@ -1,8 +1,7 @@
-package com.example.sns.repository.services;
+package com.example.sns.repository.transac;
 
-import com.example.sns.model.services.CategoriesModel;
-import com.example.sns.projection.bank1.TransactionsProjection;
-import com.example.sns.projection.services.CategoriesProjection;
+import com.example.sns.model.transac.CategoriesModel;
+import com.example.sns.projection.transac.CategoriesProjection;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

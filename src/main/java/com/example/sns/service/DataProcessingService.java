@@ -15,10 +15,4 @@ public class DataProcessingService {
         return dataRepository.findAll();
     }
 
-    public void processAndStoreData(List<DataModel> data) {
-        for (DataModel item : data) {
-            // Traitement des données (extraction des valeurs nécessaires)
-            dataRepository.save(item);
-        }
-    }
 }

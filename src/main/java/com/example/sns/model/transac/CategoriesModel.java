@@ -1,10 +1,10 @@
-package com.example.sns.model.services;
+package com.example.sns.model.transac;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "Categories")
+@Table(name = "categories")
 @Getter
 @Setter
 @Builder
@@ -17,9 +17,9 @@ public class CategoriesModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "Nom", nullable = false)
-    private String nom;
+    @Column(name = "name", nullable = false)
+    private String name;
 
-    @Column(name = "Description")
+    @Column(name = "description")
     private String description;
 }

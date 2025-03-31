@@ -1,4 +1,4 @@
-package com.example.sns.projection.transac;
+package com.example.sns.projection.services;
 
 import java.time.LocalDate;
 
