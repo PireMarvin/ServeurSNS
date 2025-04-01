@@ -2,7 +2,7 @@ package com.example.sns.projection.bank2;
 
 import java.sql.Timestamp;
 
-public interface TransactionsProjection {
+public interface TransactionsProjection2 {
 
     int getTransaction_id();
     Timestamp getTimestamp();
