@@ -15,6 +15,7 @@ public class AccountsModel2 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "accounts_id")
     private int account_id;
 
     @Column(name = "client_id", nullable = false)

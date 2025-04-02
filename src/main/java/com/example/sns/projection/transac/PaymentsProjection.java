@@ -5,9 +5,9 @@ import java.sql.Date;
 public interface PaymentsProjection {
 
     int getId();
-    int getOrder_id();
+    int getOrderId();
     double getAmount();
     String getStatus();
-    Date getPayment_date();
-    String getPayment_method();
+    Date getPaymentDate();
+    String getPaymentMethod();
 }

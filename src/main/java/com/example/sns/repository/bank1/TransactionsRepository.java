@@ -1,7 +1,6 @@
 package com.example.sns.repository.bank1;
 
 import com.example.sns.model.bank1.TransactionsModel;
-import com.example.sns.projection.bank1.ClientsProjection;
 import com.example.sns.projection.bank1.TransactionsProjection;
 import org.springframework.data.jpa.repository.JpaRepository;
 

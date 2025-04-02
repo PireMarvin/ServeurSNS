@@ -2,7 +2,7 @@ package com.example.sns.projection.bank2;
 
 import java.sql.Date;
 
-public interface ClientsProjection2 {
+public interface BankClientsProjection2 {
 
     int getClient_id();
     String getAccount_number();

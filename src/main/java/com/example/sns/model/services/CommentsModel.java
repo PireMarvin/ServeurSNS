@@ -15,7 +15,7 @@ import java.sql.Date;
 public class CommentsModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @Column(name = "customer_id")
     private int customerId;

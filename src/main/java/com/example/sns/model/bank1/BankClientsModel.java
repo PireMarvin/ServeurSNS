@@ -13,10 +13,11 @@ import java.sql.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class ClientsModel {
+public class BankClientsModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "client_id")
     private int client_id;
 
     @Column(name = "full_name")

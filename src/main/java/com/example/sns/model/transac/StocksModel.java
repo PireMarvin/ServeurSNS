@@ -20,17 +20,17 @@ public class StocksModel {
     private int id;
 
     @Column(name = "update_date")
-    private Date update_date;
+    private Date updateDate;
 
     @Column(name = "product_id", nullable = false)
-    private int product_id;
+    private int productId;
 
     @Column(name = "quantity", nullable = false)
     private int quantity;
 
     @Column(name = "min_stock", nullable = false)
-    private int min_stock;
+    private int minStock;
 
     @Column(name = "max_stock", nullable = false)
-    private int max_stock;
+    private int maxStock;
 }

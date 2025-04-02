@@ -24,10 +24,7 @@ public class ProduitsModel {
     private double price;
 
     @Column(name = "category_id", nullable = false)
-    private int category_id;
-
-    @Column(name = "stock_id",nullable = false)
-    private int stockId;
+    private int categoryId;
 
     @Column(name = "description")
     private String description;

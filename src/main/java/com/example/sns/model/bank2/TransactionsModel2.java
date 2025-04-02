@@ -16,6 +16,7 @@ import java.sql.Timestamp;
 public class TransactionsModel2 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "transaction_id")
     private int transaction_id;
 
     @Column(name = "transaction_datetime")

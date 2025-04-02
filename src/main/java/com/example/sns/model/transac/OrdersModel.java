@@ -7,26 +7,26 @@ import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity
-@Table(name = "orders")
 @Getter
 @Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "orders", schema = "bdtransac")
 public class OrdersModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "client_id")
-    private int client_id;
+    @Column(name = "client_id", nullable = false)
+    private int clientId;
 
     @Column(name = "order_date")
-    private Date order_date;
+    private Date orderDate;
 
     @Column(name = "order_time")
-    private Timestamp order_time;
+    private Timestamp orderTime;
 
     @Column(name = "total")
     private double total;
@@ -35,11 +35,11 @@ public class OrdersModel {
     private String status;
 
     @Column(name = "bank_name")
-    private String bank_name;
+    private String bankName;
 
     @Column(name = "tracking_id")
-    private String tracking_id;
+    private String trackingId;
 
     @Column(name = "address_id")
-    private int address_id;
+    private int addressId;
 }

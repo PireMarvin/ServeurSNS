@@ -2,8 +2,10 @@ package com.example.sns.projection.transac;
 
 public interface OrderLinesProjection {
 
+    //int getOrderItemId();
+    
     int getId();
-    int getOrder_id();
-    int getProduct_id();
+    int getOrderId();
+    int getProductId();
     int getQuantity();
 }

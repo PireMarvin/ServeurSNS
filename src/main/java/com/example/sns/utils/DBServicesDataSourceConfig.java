@@ -19,7 +19,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableJpaRepositories(
-        basePackages = "com.hepl.backendapi.repository.dbservices",
+        basePackages = "com.example.sns.repository.services",
         entityManagerFactoryRef = "dbservicesEntityManagerFactory",
         transactionManagerRef = "dbservicesTransactionManager"
 )
@@ -38,7 +38,7 @@ public class DBServicesDataSourceConfig {
 
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setDataSource(dataSource);
-        factory.setPackagesToScan("com.hepl.backendapi.entity.dbservices");
+        factory.setPackagesToScan("com.example.sns.model.services");
         factory.setPersistenceUnitName("services");
         factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         Properties properties = new Properties();

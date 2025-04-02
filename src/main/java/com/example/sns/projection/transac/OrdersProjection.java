@@ -6,11 +6,11 @@ import java.util.Date;
 public interface OrdersProjection {
 
     int getId();
-    int getClient_id();
-    Date getOrder_date();
-    Timestamp getOrder_time();
+    int getClientId();
+    Date getOrderDate();
+    Timestamp getOrderTime();
     double getTotal();
     String getStatus();
-    String getBank_name();
-    String getTracking_id();
+    String getBankName();
+    String getTrackingId();
 }

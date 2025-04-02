@@ -1,7 +1,7 @@
 package com.example.sns.repository.transac;
 
 import com.example.sns.model.transac.ClientsModel;
-import com.example.sns.projection.bank1.ClientsProjection;
+import com.example.sns.projection.transac.ClientsProjection;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

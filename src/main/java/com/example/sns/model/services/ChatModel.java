@@ -15,7 +15,7 @@ import java.sql.Date;
 public class ChatModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @Column(name = "sender_id")
     private int senderId;

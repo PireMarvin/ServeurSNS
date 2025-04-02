@@ -14,6 +14,7 @@ public class ExternalTransactionsModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "external_transaction_id")
     private int external_transaction_id;
 
     @Column(name = "local_transaction_id", nullable = false)

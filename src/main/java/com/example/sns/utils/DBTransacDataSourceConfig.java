@@ -17,7 +17,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableJpaRepositories(
-        basePackages = "com.hepl.backendapi.repository.dbtransac",
+        basePackages = "com.example.sns.repository.transac",
         entityManagerFactoryRef = "dbtransacEntityManagerFactory",
         transactionManagerRef = "dbtransacTransactionManager"
 )
@@ -34,7 +34,7 @@ public class DBTransacDataSourceConfig {
             @Qualifier("dbtransacDataSource") DataSource dataSource) {
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setDataSource(dataSource);
-        factory.setPackagesToScan("com.hepl.backendapi.entity.dbtransac");
+        factory.setPackagesToScan("com.example.sns.model.transac");
         factory.setPersistenceUnitName("transac");
         factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         Properties properties = new Properties();
