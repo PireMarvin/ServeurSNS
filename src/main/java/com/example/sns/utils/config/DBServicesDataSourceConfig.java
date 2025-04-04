@@ -1,4 +1,4 @@
-package com.example.sns.utils;
+package com.example.sns.utils.config;
 
 import jakarta.persistence.EntityManagerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;

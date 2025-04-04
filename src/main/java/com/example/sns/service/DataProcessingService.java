@@ -8,7 +8,6 @@ import com.example.sns.repository.services.*;
 import com.example.sns.repository.transac.*;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
@@ -40,7 +39,7 @@ public class DataProcessingService {
     private final OrderLinesRepository orderLinesRepository;
     private final OrdersRepository ordersRepository;
     private final PaymentsRepository paymentsRepository;
-    private final ProduitsRepository produitsRepository;
+    private final ProductsRepository productsRepository;
     private final StocksRepository stocksRepository;
 
     //@Scheduled(cron = "0 0 3 * * ?") //exec every day at 3am
@@ -69,7 +68,7 @@ public class DataProcessingService {
         List<OrderLinesProjection> orderLinesModels = orderLinesRepository.findAllProjectedBy();
         List<OrdersProjection> ordersModels = ordersRepository.findAllProjectedBy();
         List<PaymentsProjection> paymentsModels = paymentsRepository.findAllProjectedBy();
-        List<ProduitsProjection> produitsModels = produitsRepository.findAllProjectedBy();
+        List<ProductsProjection> productsModels = productsRepository.findAllProjectedBy();
         List<StocksProjection> stocksModels = stocksRepository.findAllProjectedBy();
 
 //        System.out.println(deliveryTrackingModels);

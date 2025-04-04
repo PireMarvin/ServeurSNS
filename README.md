@@ -1,62 +1,108 @@
-# Project Title
+# 📊 Serveur SNS
 
-Simple overview of use/purpose.
+![Java](https://img.shields.io/badge/Java-21-blue)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
 
-## Description
+Ce projet est une application backend qui a pour but la récupération des données des bases de données "auth", "services", "transac" et des 2 banques.
 
-An in-depth paragraph about your project and overview of use.
-
-## Getting Started
-
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
+----
+# 📁Structure du projet
+```src
+├── main
+│   ├── java/com.example.sns
+│   │   ├── modele         # Modèles de données (JPA Entities)
+│   │   │   ├── bank1         
+│   │   │   ├── bank2         
+│   │   │   ├── services         
+│   │   │   ├── transac         
+│   │   ├── projection     # Class d'anonymation des données      
+│   │   │   ├── bank1         
+│   │   │   ├── bank2         
+│   │   │   ├── services         
+│   │   │   ├── transac   
+│   │   ├── repository     # Accès aux données (JPA Repositories)      
+│   │   │   ├── bank1         
+│   │   │   ├── bank2         
+│   │   │   ├── services         
+│   │   │   ├── transac   
+│   │   ├── service        # Logique métier   
+│   │   ├── utils          # Utilitaires divers      
+│   │   │   ├── compositekey         
+│   │   │   ├── config   
+│   │   ├── SnsApplication.java # Point d'entrée de l'application
+│   ├── resources
+│   │   ├── application.properties # Configuration de l'application
+│   │   ├── application.yaml       # Alternative en YAML
+│   │   ├── XX.yaml                # Fichier caché contenant les mots de passe des BD
+├── test          # Contient les tests unitaires et d’intégration
+├── target        # Dossier de build
+├── pom.xml       # Fichier des dépendances
 ```
-code blocks for commands
+----
+# ☕Pourquoi Java et Spring boot?🌱
+
+### Java 
+✅ Portabilité grâce à la JVM
+
+✅ Programmation orientée objet
+
+✅ Outils de testing robustes
+
+✅ Écosystème et bibliothèques riches
+
+### Spring Boot
+✅ Serveur Web intégré (Tomcat par défaut)
+
+✅ Gestion simplifiée des dépendances (Maven / Gradle)
+
+✅ Anonymisation des donneés automatique
+
+✅ Framework populaire en entreprise avec grande communauté et documentation abondante
+
+---
+
+# 🗃️​ Dépendance utilisées
+| 🗃️​ Dépendance                | 🔍Rôle                                              |
+|--------------------------------|-----------------------------------------------------|
+| 🌐spring-boot-starter-web      | Création d'API                                      |
+| 🧠spring-boot-starter-data-jpa | Gestion de la base de donnée avec JPA/Hibernate     |
+| 🐬mysql-connector-j            | Driver JDBC pour MySQL                              |
+| 🧰lombok                       | Réduction du boilerplate Java (Getter, Setter, etc. | 
+| 🔬spring-boot-starter-test     | Framework de tests (JUnit, Mockito, etc.)           |
+| 🧪spring-boot-devtools         | Outils de développement (reload à chaud)            | 
+
+---
+# 🌊 Explication du flow de l'application
+
+1. 
+2. err
+3. er
+4. erer
+5. 
+---
+
+# 🚀 Installation et exécution
+### Pré-requis
+* Java 21 installé
+* Maven installé
+* Base de données configurée dans application.properties ou application.yaml
+
+---
+
+# 🔑 Sécurisation des mots de passe
+Pour éviter d'exposer des informations sensibles comme les mots de passe dans le code, nous utilisons un fichier 'application-password.yaml' spring: datasource: password: <DB_PASSWORD>
+
+### Démarrer l'application
 ```
+# Cloner le dépôt
+git clone https://github.com/votre-utilisateur/votre-repository.git
+cd votre-repository
 
-## Help
+# Mettre le mot de passe pour le base de donnée (application-password.yaml)
 
-Any advise for common problems or issues.
+# Construire le projet
+mvn clean install
+
+# Lancer l'application
+mvn spring-boot:run
 ```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)

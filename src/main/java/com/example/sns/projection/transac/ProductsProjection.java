@@ -1,6 +1,6 @@
 package com.example.sns.projection.transac;
 
-public interface ProduitsProjection {
+public interface ProductsProjection {
 
     int getId();
     String getName();
