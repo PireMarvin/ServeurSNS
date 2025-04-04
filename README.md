@@ -74,11 +74,26 @@ Ce projet est une application backend qui a pour but la récupération des donn�
 ---
 # 🌊 Explication du flow de l'application
 
-1. 
-2. err
-3. er
-4. erer
-5. 
+### 1. Connexion aux bases de données
+
+Au démarrage, l’application charge les configurations définies dans application.properties ou application.yaml, y compris application-password.yaml pour sécuriser les accès.
+
+Spring Boot initialise les connexions aux bases de données auth, services, transac, et celles des deux banques via JPA/Hibernate.
+
+### 2. Récupération des données
+
+L'application se connecte aux différentes bases de données source (auth, services, transac, bank1, bank2).
+
+Les repositories JPA effectuent les requêtes pour extraire les données nécessaires.
+
+### 3. Traitement et anonymisation des données
+
+Certaines données sensibles sont anonymisées via les classes de projection.
+
+### 4. Insertion dans les bases de destination
+
+Après traitement, les données sont insérées dans les bases de données cibles à l’aide des repositories JPA.
+
 ---
 
 # 🚀 Installation et exécution
