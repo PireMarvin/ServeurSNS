@@ -4,8 +4,8 @@ import com.example.sns.projection.services.*;
 import com.example.sns.projection.transac.*;
 
 
-import com.example.sns.repository.services.*;
-import com.example.sns.repository.transac.*;
+import com.example.sns.repository.recup.services.DeliveryTrackingRepository;
+import com.example.sns.repository.recup.transac.*;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

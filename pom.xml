@@ -57,12 +57,12 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- 🔬 Tests -->
+        <!-- 🔬 Tests
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
+        </dependency> -->
 
         <!-- 🧪 Devtools (reload à chaud) -->
         <dependency>
