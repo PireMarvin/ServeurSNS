@@ -18,7 +18,7 @@ public class ADDPaymentsModel {
     private int ID;
 
     @Column(name = "order_id")
-    private int order_id;
+    private int orderId;
 
     @Column(name = "amount")
     private double amount;
@@ -27,8 +27,8 @@ public class ADDPaymentsModel {
     private String status;
 
     @Column(name = "payement_date")
-    private Date payement_date;
+    private Date payementDate;
 
     @Column(name = "payment_method")
-    private String payment_method;
+    private String paymentMethod;
 }

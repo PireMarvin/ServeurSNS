@@ -1,6 +1,6 @@
 package com.example.sns.repository.recup.services;
 
-import com.example.sns.model.recuperation.services.DeliveryTrackingModel;
+import com.example.sns.model.recup.services.DeliveryTrackingModel;
 import com.example.sns.projection.services.DeliveryTrackingProjection;
 import org.springframework.data.jpa.repository.JpaRepository;
 

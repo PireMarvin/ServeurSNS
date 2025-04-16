@@ -16,10 +16,10 @@ public class ADDOrder_linesModel {
     private int ID;
 
     @Column(name = "order_id")
-    private int order_id;
+    private int orderId;
 
     @Column(name = "product_id")
-    private int product_id;
+    private int productId;
 
     @Column(name = "quantity")
     private int quantity;

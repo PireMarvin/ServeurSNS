@@ -22,5 +22,5 @@ public class ADDProductsModel {
     private double price;
 
     @Column(name = "category_id", nullable = false)
-    private int category_id;
+    private int categoryId;
 }

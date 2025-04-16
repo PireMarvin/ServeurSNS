@@ -1,10 +1,17 @@
 package com.example.sns.service;
 
+import com.example.sns.projection.bank1.*;
+import com.example.sns.projection.bank2.*;
 import com.example.sns.projection.services.*;
 import com.example.sns.projection.transac.*;
 
 
+import com.example.sns.repository.recup.bank1.*;
+import com.example.sns.repository.recup.bank2.*;
+import com.example.sns.repository.recup.services.ChatRepository;
+import com.example.sns.repository.recup.services.CommentsRepository;
 import com.example.sns.repository.recup.services.DeliveryTrackingRepository;
+import com.example.sns.repository.recup.services.SAVRepository;
 import com.example.sns.repository.recup.transac.*;
 
 import lombok.RequiredArgsConstructor;
@@ -15,22 +22,22 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DataProcessingService {
     //Bank 1
-    /*private final AccountsRepository accountsRepository;
+    private final AccountsRepository accountsRepository;
     private final BankClientsRepository bankclientsRepository;
     private final ExternalTransactionsRepository externalTransactionsRepository;
-    private final TransactionsRepository transactionsRepository;*/
+    private final TransactionsRepository transactionsRepository;
 
     //Bank 2
-    /*private final AccountsRepository2 accountsRepository2;
+    private final AccountsRepository2 accountsRepository2;
     private final BankClientsRepository2 bankclientsRepository2;
     private final ExternalTransactionsRepository2 externalTransactionsRepository2;
-    private final TransactionsRepository2 transactionsRepository2;*/
+    private final TransactionsRepository2 transactionsRepository2;
 
     //Services
-    private final DeliveryTrackingRepository deliveryTrackingRepository;
-    /*private final ChatRepository chatRepository;
-    private final CommentsRepository commentsRepository;
-    private final SAVRepository savRepository;*/
+    //private final DeliveryTrackingRepository deliveryTrackingRepository;
+    //private final ChatRepository chatRepository;
+    //private final CommentsRepository commentsRepository;
+    //private final SAVRepository savRepository;
 
     //Transac
     private final AdressesRepository adressesRepository;
@@ -47,7 +54,7 @@ public class DataProcessingService {
 
     public void fetchData(){
         //Bank 1
-        /*List<AccountsProjection> accountsModels = accountsRepository.findAllProjectedBy();
+        List<AccountsProjection> accountsModels = accountsRepository.findAllProjectedBy();
         List<BankClientsProjection> bankclientsModels = bankclientsRepository.findAllProjectedBy();
         List<ExternalTransactionsProjection> externalTransactionsModels = externalTransactionsRepository.findAllProjectedBy();
         List<TransactionsProjection> transactionsModels = transactionsRepository.findAllProjectedBy();
@@ -56,10 +63,10 @@ public class DataProcessingService {
         List<AccountsProjection2> accountsModels2 = accountsRepository2.findAllProjectedBy();
         List<BankClientsProjection2> bankclientsModels2 = bankclientsRepository2.findAllProjectedBy();
         List<ExternalTransactionsProjection2> externalTransactionsModels2 = externalTransactionsRepository2.findAllProjectedBy();
-        List<TransactionsProjection2> transactionsModels2 = transactionsRepository2.findAllProjectedBy();*/
+        List<TransactionsProjection2> transactionsModels2 = transactionsRepository2.findAllProjectedBy();
 
         //Services
-        List<DeliveryTrackingProjection> deliveryTrackingModels = deliveryTrackingRepository.findAllProjectedBy();
+        //List<DeliveryTrackingProjection> deliveryTrackingModels = deliveryTrackingRepository.findAllProjectedBy();
 
         //Transac
         List<AdressesProjection> adressesModels = adressesRepository.findAllProjectedBy();

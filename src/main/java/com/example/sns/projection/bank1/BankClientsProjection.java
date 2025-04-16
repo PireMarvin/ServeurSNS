@@ -4,10 +4,10 @@ import java.sql.Date;
 
 public interface BankClientsProjection {
 
-    int getClient_id();
+    int getClientId();
     String getGender();
-    Date getBirth_date();
-    String getMarital_status();
-    double getMonthly_income();
-    String getBank_name();
+    Date getBirthDate();
+    String getMaritalStatus();
+    double getMonthlyIncome();
+    String getBankName();
 }

@@ -1,6 +1,5 @@
-package com.example.sns.model.recuperation.transac;
+package com.example.sns.model.recup.transac;
 
-import com.example.sns.utils.compositekey.OrderItemId;
 import jakarta.persistence.*;
 import lombok.*;
 

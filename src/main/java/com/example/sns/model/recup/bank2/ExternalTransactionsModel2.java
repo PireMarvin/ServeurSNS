@@ -1,4 +1,4 @@
-package com.example.sns.model.recuperation.bank1;
+package com.example.sns.model.recup.bank2;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,15 +10,15 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ExternalTransactionsModel {
+public class ExternalTransactionsModel2 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "external_transaction_id")
-    private int external_transaction_id;
+    private int externalTransactionId;
 
     @Column(name = "local_transaction_id", nullable = false)
-    private int local_transaction_id;
+    private int localTransactionId;
 
     @Column(name = "status", nullable = false)
     private String status;

@@ -14,10 +14,10 @@ public class ADDAccounts_1Model {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "accounts_id")
-    private int accounts_id;
+    private int accountId;
 
     @Column(name = "client_id", nullable = false)
-    private int client_id;
+    private int clientId;
 
     @Column(name = "balance", nullable = false)
     private double balance;

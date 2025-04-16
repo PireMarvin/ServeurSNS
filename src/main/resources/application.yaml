@@ -11,12 +11,22 @@ spring:
   datasource:
     services :
       jdbc-url : jdbc:mysql://20.197.5.60:3306/bdservices
-      username : api
+      username : datamining
       driver-class-name: com.mysql.cj.jdbc.Driver
 
     transac :
       jdbc-url: jdbc:mysql://20.197.5.60:3306/bdtransac
-      username: api
+      username: datamining
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    bank1 :
+      jdbc-url: jdbc:mysql://20.197.5.60:3306/bdbank1
+      username: datamining
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    bank2 :
+      jdbc-url: jdbc:mysql://20.197.5.60:3306/bdbank2
+      username: datamining
       driver-class-name: com.mysql.cj.jdbc.Driver
 
     activities :

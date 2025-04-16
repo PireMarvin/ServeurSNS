@@ -1,4 +1,4 @@
-package com.example.sns.model.recuperation.bank2;
+package com.example.sns.model.recup.bank2;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -15,14 +15,14 @@ public class AccountsModel2 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "accounts_id")
-    private int account_id;
+    @Column(name = "account_id")
+    private int accountId;
 
     @Column(name = "client_id", nullable = false)
-    private int client_id;
+    private int clientId;
 
     @Column(name = "account_number")
-    private String account_number;
+    private String accountNumber;
 
     @Column(name = "balance", nullable = false)
     private double balance;

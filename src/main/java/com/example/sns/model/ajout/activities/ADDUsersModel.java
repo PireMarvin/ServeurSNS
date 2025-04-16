@@ -18,20 +18,20 @@ public class ADDUsersModel {
     private int id;
 
     @Column(name = "address_id", nullable = false)
-    private int address_id;
+    private int addressId;
 
     @Column(name = "registration_date")
-    private Date registration_date;
+    private Date registrationDate;
 
     @Column(name = "gender", nullable = false)
     private String gender;
 
     @Column(name = "birth_date", nullable = false)
-    private Date birth_date;
+    private Date birthDate;
 
     @Column(name = "marital_status", nullable = false)
-    private String marital_status;
+    private String maritalStatus;
 
     @Column(name = "monthly_salary", nullable = false)
-    private double monthly_salary;
+    private double monthlySalary;
 }

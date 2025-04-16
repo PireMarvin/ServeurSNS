@@ -18,18 +18,18 @@ public class ADDSavModel {
     private int id;
 
     @Column(name = "customer_id")
-    private int customer_id;
+    private int customerId;
 
     @Column(name = "order_id")
-    private int order_id;
+    private int orderId;
 
     @Column(name = "request_type", nullable = false)
-    private String request_type;
+    private String requestType;
 
     @Column(name = "created_at", nullable = false)
-    private Date created_at;
+    private Date createdAt;
 
     @Column(name = "updated_at", nullable = false)
-    private Date updated_at;
+    private Date updatedAt;
 
 }

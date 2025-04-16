@@ -1,6 +1,6 @@
 package com.example.sns.repository.recup.transac;
 
-import com.example.sns.model.recuperation.transac.OrdersModel;
+import com.example.sns.model.recup.transac.OrdersModel;
 import com.example.sns.projection.transac.OrdersProjection;
 import org.springframework.data.jpa.repository.JpaRepository;
 

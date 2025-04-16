@@ -1,4 +1,4 @@
-package com.example.sns.model.recuperation.bank2;
+package com.example.sns.model.recup.bank1;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -13,39 +13,40 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class TransactionsModel2 {
+public class TransactionsModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "transaction_id")
-    private int transaction_id;
+    private int transactionId;
 
     @Column(name = "transaction_datetime")
-    private Timestamp transaction_datetime;
+    private Timestamp transactionDatetime;
 
     @Column(name = "debit_account_id", nullable = false)
-    private int debit_account_id;
+    private int debitAccountId;
 
     @Column(name = "credit_bank_name", nullable = false)
-    private String credit_bank_name;
+    private String creditBankName;
 
     @Column(name = "credit_account_number", nullable = false)
-    private String credit_account_number;
+    private String creditAccountNumber;
 
     @Column(name = "merchant_name", nullable = false)
-    private String merchant_name;
+    private String merchantName;
 
     @Column(name = "authentication_type", nullable = false)
-    private String authentication_type;
+    private String authenticationType;
 
     @Column(name = "transferred_amount", nullable = false)
-    private float transferred_amount;
+    private double transferredAmount;
 
     @Column(name = "transaction_note", nullable = false)
-    private String transaction_note;
+    private String transactionNote;
 
     @Column(name = "new_debit_account_state", nullable = false)
-    private String new_debit_account_state;
+    private String newDebitAccountState;
 
     @Column(name = "age_at_request", nullable = false)
-    private int age_at_request;
+    private int ageAtRequest;
+
 }

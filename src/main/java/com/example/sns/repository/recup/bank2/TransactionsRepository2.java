@@ -1,6 +1,6 @@
 package com.example.sns.repository.recup.bank2;
 
-import com.example.sns.model.recuperation.bank2.TransactionsModel2;
+import com.example.sns.model.recup.bank2.TransactionsModel2;
 import com.example.sns.projection.bank2.TransactionsProjection2;
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -19,13 +19,13 @@ public class ADDOrdersModel {
     private int ID;
 
     @Column(name = "client_id")
-    private int client_id;
+    private int clientId;
 
     @Column(name = "order_date")
-    private Date order_date;
+    private Date orderDate;
 
     @Column(name = "order_time")
-    private Timestamp order_time;
+    private Timestamp orderTime;
 
     @Column(name = "total")
     private double total;
@@ -34,11 +34,11 @@ public class ADDOrdersModel {
     private String status;
 
     @Column(name = "bank_name", nullable = false)
-    private String bank_name;
+    private String bankName;
 
     @Column(name = "tracking_id")
-    private String tracking_id;
+    private String trackingId;
 
     @Column(name = "address_id")
-    private int address_id;
+    private int addressId;
 }

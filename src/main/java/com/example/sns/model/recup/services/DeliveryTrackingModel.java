@@ -1,4 +1,4 @@
-package com.example.sns.model.recuperation.services;
+package com.example.sns.model.recup.services;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -14,7 +14,7 @@ public class ADDAdressesModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "addresses")
-    private int addresses_id;
+    private int addressesId;
 
     @Column(name = "city", nullable = false)
     private String city;

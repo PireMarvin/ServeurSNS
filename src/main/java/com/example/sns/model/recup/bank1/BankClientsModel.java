@@ -1,4 +1,4 @@
-package com.example.sns.model.recuperation.bank2;
+package com.example.sns.model.recup.bank1;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -13,34 +13,34 @@ import java.sql.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class BankClientsModel2 {
+public class BankClientsModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "client_id")
-    private int client_id;
+    private int clientId;
 
     @Column(name = "full_name")
-    private String full_name;
+    private String fullName;
 
     @Column(name = "client_number", nullable = false)
-    private String client_number;
+    private String clientNumber;
 
     @Column(name = "account_number", nullable = false)
-    private String account_number;
+    private String accountNumber;
 
     @Column(name = "gender", nullable = false)
     private String gender;
 
     @Column(name = "birth_date", nullable = false)
-    private Date birth_date;
+    private Date birthDate;
 
     @Column(name = "marital_status", nullable = false)
-    private String marital_status;
+    private String maritalStatus;
 
     @Column(name = "monthly_income")
-    private double monthly_income;
+    private double monthlyIncome;
 
     @Column(name = "bank_name")
-    private String bank_name;
+    private String bankName;
 }
