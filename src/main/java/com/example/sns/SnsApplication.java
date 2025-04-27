@@ -27,7 +27,7 @@ public class SnsApplication {
         DataProcessingService dataProcessingService = context.getBean(DataProcessingService.class);
         dataProcessingService.fetchData();
     }
-    
+
     @PostConstruct
     public void init() {
         System.out.println("🏁 Application bien démarrée !");

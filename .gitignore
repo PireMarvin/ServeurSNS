@@ -32,6 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 
-### Sensitive Files ###
-application-password.yaml
 
