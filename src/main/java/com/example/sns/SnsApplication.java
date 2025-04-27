@@ -1,6 +1,7 @@
 package com.example.sns;
 
 import com.example.sns.service.DataProcessingService;
+import jakarta.annotation.PostConstruct;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -25,5 +26,10 @@ public class SnsApplication {
         // Récupérer le service et appeler fetchData()
         DataProcessingService dataProcessingService = context.getBean(DataProcessingService.class);
         dataProcessingService.fetchData();
+    }
+    
+    @PostConstruct
+    public void init() {
+        System.out.println("🏁 Application bien démarrée !");
     }
 }
