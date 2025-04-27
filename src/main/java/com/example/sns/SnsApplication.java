@@ -20,6 +20,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 //}
 public class SnsApplication {
     public static void main(String[] args) {
+        System.out.println("test");
         // Lancer l'application Spring Boot
         ApplicationContext context = SpringApplication.run(SnsApplication.class, args);
 
