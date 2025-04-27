@@ -22,7 +22,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 )
 public class MongoDBAuthConfig {
 
-    @Value("mongodb+srv://userdb:X400SjebphV!@bdauth.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000")
+    @Value("${spring.data.mongodb.Clients.uri}")
     private String mongoUri; // Injection de l'URI depuis application.yml
 
     // Bean pour MongoClient avec URI de connexion
