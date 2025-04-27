@@ -35,6 +35,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 
 @Service
 @RequiredArgsConstructor
@@ -97,9 +101,10 @@ public class DataProcessingService {
 
     //@Scheduled(cron = "0 0 3 * * ?") //exec every day at 3am
     //@Scheduled(fixedRate = 6000)
-    @Scheduled(fixedRate = 120000) // Pour toutes les 2 minutes
+   // @Scheduled(fixedRate = 120000) // Pour toutes les 2 minutes
 
     public void fetchData(){
+        logger.info("🔄 fetchData() exécuté à {}", java.time.LocalDateTime.now());
         //Bank 1
         List<AccountsProjection> accountsModels = accountsRepository.findAllProjectedBy();
         List<BankClientsProjection> bankclientsModels = bankclientsRepository.findAllProjectedBy();

@@ -25,7 +25,7 @@ public class SnsApplication {
 
         // Récupérer le service et appeler fetchData()
         DataProcessingService dataProcessingService = context.getBean(DataProcessingService.class);
-        dataProcessingService.fetchData();
+        //dataProcessingService.fetchData();
     }
 
     @PostConstruct
