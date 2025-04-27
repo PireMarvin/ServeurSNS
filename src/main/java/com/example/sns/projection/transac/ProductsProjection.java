@@ -2,7 +2,7 @@ package com.example.sns.projection.transac;
 
 public interface ProductsProjection {
 
-    int getId();
+    Long getId();
     String getName();
     double getPrice();
     int getCategoryId();

@@ -15,8 +15,7 @@ import java.sql.Timestamp;
 @AllArgsConstructor
 public class ADDOrdersModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int ID;
+    private Long ID;
 
     @Column(name = "client_id")
     private int clientId;
@@ -33,7 +32,7 @@ public class ADDOrdersModel {
     @Column(name = "status")
     private String status;
 
-    @Column(name = "bank_name", nullable = false)
+    @Column(name = "bank_name")
     private String bankName;
 
     @Column(name = "tracking_id")

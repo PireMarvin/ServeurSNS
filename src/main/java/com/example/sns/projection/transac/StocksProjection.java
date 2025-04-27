@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public interface StocksProjection {
 
-    int getId();
+    Long getId();
     int getProductId();
     int getQuantity();
     int getMinStock();

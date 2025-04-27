@@ -12,8 +12,7 @@ import lombok.*;
 @AllArgsConstructor
 public class ADDCategoriesModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int ID;
+    private Long ID;
 
     @Column(name = "name", nullable = false)
     private String name;

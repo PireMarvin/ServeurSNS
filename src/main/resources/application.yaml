@@ -6,7 +6,7 @@ logging:
 
 spring:
   config:
-    import: "application-password.yaml"
+    import: "classpath:application-password.yaml"
 
   datasource:
     services :
@@ -30,6 +30,15 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
 
     activities :
-      jdbc-url : jdbc:mysql://datamining.masmzi.icu:3306/bdactivites
+      jdbc-url : jdbc:mysql://datamining.masmzi.icu:3306/bdactivites?autoReconnect=true&useSSL=false&serverTimezone=UTC
       username : datamining
-      diver-class-name : com.mysql.cj.jdbc.Driver
+      driver-class-name : com.mysql.cj.jdbc.Driver
+
+  data:
+    mongodb:
+      Clients:
+        uri: mongodb+srv://userdb:X400SjebphV!@bdauth.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000
+  # ${mongodb.clients.password} X400SjebphV!
+      addClients:
+        uri: mongodb://userdb:X400kebphV%40@98.71.128.33:27017/
+      #${mongodb.addClients.password}

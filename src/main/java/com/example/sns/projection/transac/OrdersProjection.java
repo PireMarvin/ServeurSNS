@@ -1,11 +1,11 @@
 package com.example.sns.projection.transac;
 
 import java.sql.Timestamp;
-import java.util.Date;
+import java.sql.Date;
 
 public interface OrdersProjection {
 
-    int getId();
+    Long getId();
     int getClientId();
     Date getOrderDate();
     Timestamp getOrderTime();
@@ -13,4 +13,5 @@ public interface OrdersProjection {
     String getStatus();
     String getBankName();
     String getTrackingId();
+    int getAddressId();
 }

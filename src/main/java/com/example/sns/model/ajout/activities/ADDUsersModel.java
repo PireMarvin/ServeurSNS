@@ -14,24 +14,23 @@ import java.sql.Date;
 @AllArgsConstructor
 public class ADDUsersModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
-    @Column(name = "address_id", nullable = false)
+    @Column(name = "address_id")
     private int addressId;
 
     @Column(name = "registration_date")
     private Date registrationDate;
 
-    @Column(name = "gender", nullable = false)
+    @Column(name = "gender")
     private String gender;
 
-    @Column(name = "birth_date", nullable = false)
+    @Column(name = "birth_date")
     private Date birthDate;
 
-    @Column(name = "marital_status", nullable = false)
+    @Column(name = "marital_status")
     private String maritalStatus;
 
-    @Column(name = "monthly_salary", nullable = false)
+    @Column(name = "monthly_salary")
     private double monthlySalary;
 }

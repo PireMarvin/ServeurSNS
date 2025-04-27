@@ -12,9 +12,8 @@ import lombok.*;
 @AllArgsConstructor
 public class ADDAdressesModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "addresses")
-    private int addressesId;
+    private Long addressesId;
 
     @Column(name = "city", nullable = false)
     private String city;

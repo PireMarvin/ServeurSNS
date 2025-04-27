@@ -2,7 +2,7 @@ package com.example.sns.projection.transac;
 
 public interface AdressesProjection {
 
-    int getId();
+    Long getId();
     String getCity();
     String getCountry();
 

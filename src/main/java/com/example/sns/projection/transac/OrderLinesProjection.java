@@ -4,7 +4,7 @@ public interface OrderLinesProjection {
 
     //int getOrderItemId();
     
-    int getId();
+    Long getId();
     int getOrderId();
     int getProductId();
     int getQuantity();

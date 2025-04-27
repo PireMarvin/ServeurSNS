@@ -3,7 +3,7 @@ package com.example.sns.projection.bank1;
 
 public interface AccountsProjection {
 
-    int getAccountId();
+    long getAccountId();
     int getClientId();
     double getBalance();
 }

@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 
 public interface TransactionsProjection2 {
 
-    int getTransactionId();
+    String getTransactionId();
     Timestamp getTransactionDatetime();
     int getDebitAccountId();
     String getCreditBankName();

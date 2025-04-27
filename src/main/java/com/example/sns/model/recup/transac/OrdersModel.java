@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.sql.Timestamp;
-import java.util.Date;
+import java.sql.Date;
 
 @Entity
 @Getter
@@ -17,7 +17,7 @@ public class OrdersModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "client_id", nullable = false)
     private int clientId;
@@ -42,4 +42,7 @@ public class OrdersModel {
 
     @Column(name = "address_id")
     private int addressId;
+
+    @Column(name = "livreur_id")
+    private int livreurId;
 }

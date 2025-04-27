@@ -17,7 +17,7 @@ public class TransactionsModel2 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "transaction_id")
-    private int transactionId;
+    private String transactionId;
 
     @Column(name = "transaction_datetime")
     private Timestamp transactionDatetime;
@@ -46,6 +46,6 @@ public class TransactionsModel2 {
     @Column(name = "new_debit_account_state", nullable = false)
     private String newDebitAccountState;
 
-    @Column(name = "age_at_request", nullable = false)
+    @Column(name = "age_at_request")
     private int ageAtRequest;
 }

@@ -71,6 +71,12 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+
+        <!-- Dépendance pour Spring Boot avec MongoDB -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

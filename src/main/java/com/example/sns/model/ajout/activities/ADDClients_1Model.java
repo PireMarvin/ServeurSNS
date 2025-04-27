@@ -14,9 +14,8 @@ import java.sql.Date;
 @AllArgsConstructor
 public class ADDClients_1Model {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "client_id")
-    private int clientId;
+    private Long clientId;
 
     @Column(name = "gender", nullable = false)
     private String gender;

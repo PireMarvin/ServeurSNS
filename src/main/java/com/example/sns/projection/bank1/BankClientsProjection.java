@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public interface BankClientsProjection {
 
-    int getClientId();
+    Long getClientId();
     String getGender();
     Date getBirthDate();
     String getMaritalStatus();

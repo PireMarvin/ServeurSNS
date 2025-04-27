@@ -12,18 +12,17 @@ import lombok.*;
 @AllArgsConstructor
 public class ADDStockModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
-    @Column(name = "product_id", nullable = false)
+    @Column(name = "product_id")
     private int productId;
 
-    @Column(name = "quantity", nullable = false)
+    @Column(name = "quantity")
     private int quantity;
 
-    @Column(name = "min_stock", nullable = false)
+    @Column(name = "min_stock")
     private int minStock;
 
-    @Column(name = "max_stock", nullable = false)
+    @Column(name = "max_stock")
     private int maxStock;
 }

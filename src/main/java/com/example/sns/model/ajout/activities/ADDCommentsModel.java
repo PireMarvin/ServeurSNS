@@ -14,7 +14,6 @@ import java.sql.Date;
 @AllArgsConstructor
 public class ADDCommentsModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int ID;
 
     @Column(name = "customer_id")

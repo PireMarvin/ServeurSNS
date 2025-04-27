@@ -12,8 +12,7 @@ import lombok.*;
 @AllArgsConstructor
 public class ADDOrder_linesModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int ID;
+    private Long ID;
 
     @Column(name = "order_id")
     private int orderId;

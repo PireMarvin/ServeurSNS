@@ -14,8 +14,7 @@ import java.sql.Date;
 @AllArgsConstructor
 public class ADDPaymentsModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int ID;
+    private Long ID;
 
     @Column(name = "order_id")
     private int orderId;

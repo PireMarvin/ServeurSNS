@@ -14,7 +14,6 @@ import java.sql.Date;
 @AllArgsConstructor
 public class ADDSavModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "customer_id")
@@ -23,13 +22,13 @@ public class ADDSavModel {
     @Column(name = "order_id")
     private int orderId;
 
-    @Column(name = "request_type", nullable = false)
+    @Column(name = "request_type")
     private String requestType;
 
-    @Column(name = "created_at", nullable = false)
+    @Column(name = "created_at")
     private Date createdAt;
 
-    @Column(name = "updated_at", nullable = false)
+    @Column(name = "updated_at")
     private Date updatedAt;
 
 }

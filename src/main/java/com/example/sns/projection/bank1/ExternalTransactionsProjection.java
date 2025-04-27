@@ -2,7 +2,7 @@ package com.example.sns.projection.bank1;
 
 public interface ExternalTransactionsProjection {
 
-    int getexternalTransactionId();
-    int getlocalTransactionId();
+    Long getExternalTransactionId();
+    int getLocalTransactionId();
     String getStatus();
 }

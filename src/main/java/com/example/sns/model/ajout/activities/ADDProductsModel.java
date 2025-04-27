@@ -12,15 +12,14 @@ import lombok.*;
 @AllArgsConstructor
 public class ADDProductsModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "price", nullable = false)
+    @Column(name = "price")
     private double price;
 
-    @Column(name = "category_id", nullable = false)
+    @Column(name = "category_id")
     private int categoryId;
 }

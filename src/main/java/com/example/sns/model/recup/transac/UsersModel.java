@@ -13,11 +13,11 @@ import java.sql.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class ClientsModel {
+public class UsersModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "name", nullable = false)
     private String name;
@@ -29,7 +29,7 @@ public class ClientsModel {
     private String phone;
 
     @Column(name = "address_id", nullable = false)
-    private int addressID;
+    private int addressId;
 
     @Column(name = "registration_date")
     private Date registrationDate;

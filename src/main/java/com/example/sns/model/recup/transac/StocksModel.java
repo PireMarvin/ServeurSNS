@@ -17,7 +17,7 @@ public class StocksModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "update_date")
     private Date updateDate;

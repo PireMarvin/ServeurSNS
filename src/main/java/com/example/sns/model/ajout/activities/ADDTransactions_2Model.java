@@ -4,9 +4,10 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 @Entity
-@Table(name = "transaction_2")
+@Table(name = "transactions_2")
 @Getter
 @Setter
 @Builder
@@ -14,27 +15,26 @@ import java.sql.Date;
 @AllArgsConstructor
 public class ADDTransactions_2Model {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "transaction_id")
-    private int transactionId;
+    private String Id;
 
-    @Column(name = "transaction_datetime", nullable = false)
-    private Date transactionDatetime;
+    @Column(name = "transaction_datetime")
+    private Timestamp transactionDatetime;
 
-    @Column(name = "debit_account_id", nullable = false)
+    @Column(name = "debit_account_id")
     private int debitAccountId;
 
-    @Column(name = "credit_bank_name", nullable = false)
+    @Column(name = "credit_bank_name")
     private String creditBankName;
 
-    @Column(name = "authentication_type", nullable = false)
+    @Column(name = "authentication_type")
     private String authenticationType;
 
-    @Column(name = "transferred_amount", nullable = false)
+    @Column(name = "transferred_amount")
     private double transferredAmount;
 
-    @Column(name = "new_debit_account_state", nullable = false)
-    private double newDebitAccountState;
+    @Column(name = "new_debit_account_state")
+    private String newDebitAccountState;
 
     @Column(name = "age_at_request")
     private int ageAtRequest;

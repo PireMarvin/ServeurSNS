@@ -16,7 +16,7 @@ public class SAVModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "customer_id")
     private int customerId;
@@ -32,4 +32,7 @@ public class SAVModel {
 
     @Column(name = "updated_at")
     private Date updatedAt;
+
+    @Column(name = "description")
+    private String description;
 }

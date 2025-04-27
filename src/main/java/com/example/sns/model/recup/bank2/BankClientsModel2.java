@@ -18,7 +18,7 @@ public class BankClientsModel2 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "client_id")
-    private int clientId;
+    private Long clientId;
 
     @Column(name = "full_name")
     private String fullName;

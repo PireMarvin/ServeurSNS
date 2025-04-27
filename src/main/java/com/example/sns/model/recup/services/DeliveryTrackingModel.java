@@ -15,7 +15,7 @@ public class DeliveryTrackingModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "order_id", nullable = false)
     private int orderId;

@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public interface PaymentsProjection {
 
-    int getId();
+    Long getId();
     int getOrderId();
     double getAmount();
     String getStatus();

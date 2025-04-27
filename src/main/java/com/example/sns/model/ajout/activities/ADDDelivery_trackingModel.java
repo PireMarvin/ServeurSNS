@@ -14,7 +14,6 @@ import java.sql.Date;
 @AllArgsConstructor
 public class ADDDelivery_trackingModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int ID;
 
     @Column(name = "order_id")

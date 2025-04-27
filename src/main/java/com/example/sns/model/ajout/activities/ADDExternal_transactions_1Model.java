@@ -12,9 +12,8 @@ import lombok.*;
 @AllArgsConstructor
 public class ADDExternal_transactions_1Model {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "external_transaction_id")
-    private int externalTransactionId;
+    private Long externalTransactionId;
 
     @Column(name = "local_transaction_id", nullable = false)
     private int localTransactionId;

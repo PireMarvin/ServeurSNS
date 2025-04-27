@@ -12,7 +12,6 @@ import lombok.*;
 @AllArgsConstructor
 public class ADDChatModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int ID;
 
     @Column(name = "sender_id")

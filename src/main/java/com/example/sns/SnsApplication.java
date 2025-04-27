@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EntityScan(basePackages = "com.example.sns.model")
-//@EnableScheduling
+@EnableScheduling
 //public class SnsApplication {
 //    public static void main(String[] args) {
 //        SpringApplication.run(SnsApplication.class, args);

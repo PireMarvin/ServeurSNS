@@ -12,9 +12,8 @@ import lombok.*;
 @AllArgsConstructor
 public class ADDAccounts_1Model {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "accounts_id")
-    private int accountId;
+    @Column(name = "account_id")
+    private Long accountId;
 
     @Column(name = "client_id", nullable = false)
     private int clientId;

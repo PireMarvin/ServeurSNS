@@ -2,13 +2,13 @@ package com.example.sns.projection.transac;
 
 import java.sql.Date;
 
-public interface ClientsProjection {
+public interface UsersProjection {
 
-    int getId();
-    int getAddressID();
+    Long getId();
+    Integer getAddressId();
     Date getRegistrationDate();
-    char getGender();
+    String getGender();
     Date getBirthDate();
     String getMaritalStatus();
-    double getMonthlySalary();
+    Double getMonthlySalary();
 }
