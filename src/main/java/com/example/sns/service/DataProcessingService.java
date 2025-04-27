@@ -104,7 +104,7 @@ public class DataProcessingService {
    // @Scheduled(fixedRate = 120000) // Pour toutes les 2 minutes
 
     public void fetchData(){
-        logger.info("🔄 fetchData() exécuté à {}", java.time.LocalDateTime.now());
+        System.out.println("🔄 fetchData() exécuté à "+ java.time.LocalDateTime.now());
         //Bank 1
         List<AccountsProjection> accountsModels = accountsRepository.findAllProjectedBy();
         List<BankClientsProjection> bankclientsModels = bankclientsRepository.findAllProjectedBy();
