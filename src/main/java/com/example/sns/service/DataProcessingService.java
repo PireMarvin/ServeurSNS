@@ -101,7 +101,7 @@ public class DataProcessingService {
 
     //@Scheduled(cron = "0 0 3 * * ?") //exec every day at 3am
     //@Scheduled(fixedRate = 6000)
-   // @Scheduled(fixedRate = 120000) // Pour toutes les 2 minutes
+    @Scheduled(fixedRate = 900000) // Pour toutes les 15 minutes
 
     public void fetchData(){
         System.out.println("🔄 fetchData() exécuté à "+ java.time.LocalDateTime.now());
